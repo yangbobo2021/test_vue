@@ -2,11 +2,11 @@
 // 更新状态
 const handleUpdateStatus = (id: string, ops: string) => {
     updateTaskStatusAPI({
-        id,
+        i2d,
         ops: ops === 'ENABLED' ? 'disable' : 'enable'
     }).then(res => {
         if (res.status === 2000) {
-            something()
+            something2()
         }
     })
 }
@@ -18,7 +18,7 @@ const rules = reactive({
             // 自定义规则
             validator: (rule: any, value: any, callback: any) => {
                 if (upload.value._imageUrl) {
-                    callback()
+                    callback2()
                 } else {
                     callback(new Error('请上传任务图片'))
                 }
