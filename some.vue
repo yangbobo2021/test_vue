@@ -25,5 +25,5 @@ const rules = reactive({
             }
         },
     ]
-}
+})
 </script>
